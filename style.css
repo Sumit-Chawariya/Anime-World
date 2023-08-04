@@ -1,0 +1,257 @@
+* {
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:#f0f0f0;
+    font-family: "Roboto", sans-serif;
+   
+}
+/* navbar */
+
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%
+
+}
+.navbar ul{
+    display: flex;
+    width:100%;
+    background-color: black;
+    color:white;
+}
+.navbar li{
+    list-style: none;
+    padding: 2rem;
+}
+.navbar a {
+    text-decoration: none;
+   color: white; 
+   padding: 1.2rem;
+}
+
+.navbar-logo {
+    flex: 1; 
+    font-size: 1.5rem;
+    user-select: none;
+}
+.hid-contact{
+    display: none;
+}
+.hid-contact:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.navbar-links:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+    /* transition: 0.3 ease; */
+}
+
+.navbar-links:last-child {
+    display: none;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* main */
+main section h1{
+    width:100%;
+    text-align: center;
+    background-color: #bfb9b9;
+    color:white;
+    padding-top:5vh ;
+    height: 10vh;
+}
+.area{
+    margin-top: 15vh;
+    padding: 0;
+    display: flex;
+
+}
+.gallery{
+    max-width: 100%;
+    margin-left:50px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.photo-card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem ;
+    flex: 1 0 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-card img{
+    max-width:100%;
+    height:auto;
+}
+
+.photo-card :hover{
+    transform: scale(1.05);
+}
+
+.photo-card h2{
+    margin-bottom: 0.5rem;
+    color:#333;
+    font-size: 1.2rem;
+}
+
+.description{
+    font-size: 1rem;
+    color: #666 ;
+    margin:0.5rem 0;
+    font-size:1.2rem;
+
+}
+.date{
+    font-size:0.8rem;
+    color:#999;
+}
+.button{
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .7rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #272e38;
+}
+.navbar-toggle{
+    display: none;
+}
+/* media quries */
+@media (max-width: 600px) {
+    .navbar ul {
+      flex-wrap:wrap;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-toggle{
+        display: block;
+    }
+    .active{
+        display: block;
+    }
+  }
+  /* navbar query */
+  @media (max-width: 600px) {
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+    .navbar-links:last-child {
+        display: none;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .active {
+        display: block;
+    }
+}
+/* main body query */
+@media(max-width: 600px)  {
+
+    .area{
+        display: flex;
+        flex-wrap:wrap;
+        margin-top:15vh;
+    }
+    .calender{
+        margin-left:20px;  
+    }
+    iframe{
+        width:64vh;
+    }
+    .gallery{
+        margin: 0;
+    }
+}  
+
+/* calender setting */
+.calender{
+    margin-top:15px;
+    margin-right:10px;
+}
+.calender h1{
+    color:#272e38;
+    font-family: 'Blackadder ITC', Sans serif;
+    font-size: 2em;
+
+}
+iframe{
+    height:40vh;
+    border:solid 1px #777;
+
+}
+
+ /* Contact Section */
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .social-media {
+    margin-top: 1rem;
+  }
+  
+  .icon-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+  }
+  
+  .icon-link:hover {
+    text-decoration: underline;
+  }
